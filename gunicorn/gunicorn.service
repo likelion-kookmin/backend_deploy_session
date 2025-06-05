@@ -7,7 +7,7 @@ After=network.target
 User=ubuntu
 Group=ubuntu
 WorkingDirectory=/home/ubuntu/backend_deploy_session/challenge_backend_2025/challenge_backend_2025
-EnvironmentFile=/home/ubuntu/backend_deploy_session/challenge_backend_2025/challenge_backend_2025.env
+EnvironmentFile=/home/ubuntu/backend_deploy_session/challenge_backend_2025/challenge_backend_2025/ .env
 ExecStart=/home/ubuntu/backend_deploy_session/challenge_backend_2025/challenge_backend_2025/venv/bin/gunicorn \
         --workers 2 \
         --bind unix:/tmp/gunicorn.sock \
